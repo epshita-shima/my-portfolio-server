@@ -8,7 +8,7 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-const uri = "mongodb+srv://portfolio_bd:7dImI8gtK32y3ne7@cluster0.y97ue.mongodb.net/?retryWrites=true&w=majority";
+const uri = "mongodb+srv://db_portfolio:SR7wnyEJ6EEw7Idy@cluster0.y97ue.mongodb.net/?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
 async function run() {
