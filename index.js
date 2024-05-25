@@ -2,13 +2,13 @@ const express = require('express');
 const cors = require('cors');
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5001;
 
 //use middleware
 app.use(cors());
 app.use(express.json());
 
-const uri = "mongodb+srv://db_portfolio:SR7wnyEJ6EEw7Idy@cluster0.y97ue.mongodb.net/?retryWrites=true&w=majority";
+const uri =  "mongodb+srv://db_portfolio:cJnyrHwA2pHvYz0u@cluster0.y97ue.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
 async function run() {
